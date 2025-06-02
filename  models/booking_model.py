@@ -1,4 +1,5 @@
 class Booking:
+
     def __init__(self, firstname, lastname, totalprice, depositpaid, checkin, checkout, additionalneeds):
         self.firstname = firstname
         self.lastname = lastname

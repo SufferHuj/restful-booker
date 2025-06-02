@@ -1,6 +1,9 @@
 import pytest
 from client.booking_client import BookingClient
 from utils.data_generator import generate_booking_data
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 BASE_URL = "https://restful-booker.herokuapp.com"
 
