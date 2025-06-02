@@ -1,4 +1,3 @@
-
 from utils.custom_requester import CustomRequester
 
 class BookingClient:

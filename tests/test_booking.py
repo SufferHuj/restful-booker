@@ -32,10 +32,10 @@ def test_delete_booking(client, created_booking):
     get_response = client.get_booking(booking_id, expected_status=404)
     assert get_response.status_code == 404
 
-# def test_get_all_bookings(client):
-#     response = client.get_all_bookings()
-#     assert response.status_code == 200
-#     assert isinstance(response.json(), list)
+def test_get_all_bookings(client):
+    response = client.get_all_bookings()
+    assert response.status_code == 200
+    assert isinstance(response.json(), list)
 
 def test_create_booking_with_invalid_data(client):
     bad_data = {
